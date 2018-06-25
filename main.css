@@ -1,0 +1,1043 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: blanchedalmond;
+    min-height: 100%;
+    height: 100%;
+    min-width: 100%;
+    font-family: 'Concert One',
+    cursive;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.navbar-brand {
+    transition: transform .2s;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.3);
+}
+
+.navbar-brand:active {
+    transform: scale(.8);
+}
+
+#navbear {
+    transition: top .3s;
+}
+
+#Intro {
+    background: linear-gradient(#0666b4, transparent 95%, #2e2b26),
+    url("/assets/images/motherboard.jpg") no-repeat center;
+    background-size: cover;
+    position: inherit;
+    text-align: center;
+    margin-bottom: 0;
+    height: auto;
+    min-height: 100vh;
+}
+
+#Layer_1 {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+#modalhead{
+    background-color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#About{
+    background: linear-gradient(#2e2b26, transparent 10%, #A5A5A5 150%),
+    url("/assets/images/power-outage.jpg") no-repeat center;
+    background-size: cover;
+    height: auto;
+    min-height: 100vh;
+    margin-bottom: 0;
+}
+
+#lifestory {
+    background: linear-gradient(transparent, white 20%);
+    margin-top: -250px;
+    padding-top: 40px;
+    font-size: 18px;
+    color: red;
+    text-shadow: 3px 3px 4px #ffffff;
+    text-indent: 50px;
+}
+
+#lifexit{
+    background-color: #ffffff;
+    padding: 1vh 3vh 1vh 3vh;
+    border: 4px solid red;
+    font-family: Verdana,
+    Geneva,
+    Tahoma,
+    sans-serif;
+    font-size: 1.5em;
+    color: red;
+}
+
+#lifexit:hover {
+    border: 2px solid white;
+}
+
+#interesting {
+    font-family: 'Open Sans',
+    sans-serif;
+}
+
+#svabout {
+    position: inherit;
+    width: 100%;
+    height: 80vh;
+    margin-top: 5vh;
+    clear: both;
+    overflow: hidden;
+}
+
+#Work {
+    background: radial-gradient(at 52% 90px, #A8A8A8 40%
+    ,
+    #838383 71%,
+    #bebebe 76%);
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#skillz{
+    position: inherit;
+    width: 100%;
+    height: 100vh;    
+}
+
+.img-fluid {
+    height: 16vh;
+    max-height: 16vh;
+    width: 100%;
+    margin: 2vh;
+}
+
+#Footer {
+    background: linear-gradient(black, transparent),url("/assets/images/motherboard.jpg");
+    background-position: center;
+    color: white;
+    height: 20vh;
+    padding: 1vh;
+}
+
+/* 
+==========================================================
+            ANIMATIONS
+==========================================================*/
+
+/* -------KEYFRAMES--------- */
+
+@keyframes flicker {
+    0% {
+        opacity: 0.1;
+    }
+    .3% {
+        opacity: 1;
+    }
+    1% {
+        opacity: 0.1;
+    }
+    1.1% {
+        opacity: 1;
+    }
+    1.5% {
+        opacity: 0.1;
+    }
+    2.5% {
+        opacity: 1;
+    }
+    3.1% {
+        opacity: 0.3;
+    }
+    3.8% {
+        opacity: 1;
+    }
+    7.6% {
+        opacity: 0.7;
+    }
+    9% {
+        opacity: 0.2;
+    }
+    10.9% {
+        opacity: .9;
+    }
+    12.5% {
+        opacity: 1;
+    }
+}
+
+@keyframes flickero {
+    0% {
+        opacity: 0.1;
+    }
+    .5% {
+        opacity: 1;
+    }
+    1% {
+        opacity: 0.1;
+    }
+    2% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    75% {
+        opacity: 1;
+    }
+    77% {
+        opacity: 0.1;
+    }
+    79% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flickery {
+    0% {
+        opacity: 0.1;
+    }
+    .5% {
+        opacity: 0.1;
+    }
+    1% {
+        opacity: 1;
+    }
+    4.8% {
+        opacity: 1;
+    }
+    5.3% {
+        opacity: 0.1;
+    }
+    5.8% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    20.8% {
+        opacity: 0.4;
+    }
+    21.75% {
+        opacity: 1;
+    }
+}
+
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes tada {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes sparkle {
+    0% {
+        opacity: 0;
+        transform: rotate(270deg);
+    }
+    7% {
+        opacity: 1;
+        transform: scale(2);
+    }
+    15% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes twitch {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loading {
+    10% {
+        transform: scale(.6);
+        fill: #ff5e00;
+    }
+}
+
+@keyframes lensColor {
+    0% {
+        fill: #ffbb00;
+    }
+    30% {
+        fill: #7cbb00;
+    }
+    60% {
+        fill: #00a1f1;
+    }
+    80% {
+        fill: #f65314;
+    }
+    100% {
+        fill: #ffbb00;
+    }
+}
+
+@keyframes progress {
+    50% {
+        fill: #3ffa19;
+    }
+}
+
+@keyframes letter {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes title {
+    100% {
+        fill: #770000;
+    }
+}
+
+@keyframes sparks {
+    
+    50%{
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(280px);
+    }
+}
+
+@keyframes throb {
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes tail {
+    40%{
+        transform: rotate(-70deg);
+    }
+    60%{
+        transform: rotate(40deg);
+    }
+    80% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes sleepyhead {
+    50%{
+        transform: rotateX(25deg);
+    }
+}
+
+/* --------INTRO-------- */
+
+#Layer_1-2 {
+    opacity: 0;
+    animation: twitch 2s step-start forwards;
+    animation-delay: 1s;
+}
+
+#Layer_2,
+#Loading_3,
+#_Title_2,
+#introBtn {
+    opacity: 0;
+    animation: tada 1s ease-in forwards;
+    animation-delay: 1.8s;
+}
+
+#introBtn {
+    opacity: 0;
+    animation: tada 1s 6.5s ease-in forwards;
+}
+
+#chunk {
+    animation: flickero 12s linear infinite;
+}
+
+#chunk2 {
+    animation: flicker 28s linear infinite;
+}
+
+#chunk3 {
+    animation: flickery 12s linear infinite;
+}
+
+.glass {
+    stroke: #450074;
+    stroke-width: 1;
+    stroke-dasharray: 8;
+    stroke-dashoffset: 250;
+    animation: offset 5s linear infinite;
+}
+
+.glass-border {
+    opacity: 0;
+    fill: #ff3dd5;
+    animation: tada .5s ease infinite;
+}
+
+.color-glare {
+    animation: lensColor 8s ease infinite;
+}
+
+.loading-1 {
+    transform-origin: 18px 4.909999847412109px;
+    animation: loading 1s ease-in infinite;
+}
+
+.loading-2 {
+    transform-origin: 8.7422194480896px 8.738819599151611px;
+    animation: loading 1s ease-out infinite;
+    animation-delay: 0.1s;
+}
+
+.loading-3 {
+    transform-origin: 4.909999847412109px 18px;
+    animation: loading 1s ease-out infinite;
+    animation-delay: 0.2s;
+}
+
+.loading-4 {
+    transform-origin: 8.738980531692505px 27.25778102874756px;
+    animation: loading 1s ease-out infinite;
+    animation-delay: 0.3s;
+}
+
+.loading-5 {
+    transform-origin: 18px 31.09000015258789px;
+    animation: loading 1s ease-out infinite;
+    animation-delay: 0.4s;
+}
+
+.loading-6 {
+    transform-origin: 27.25778102874756px 27.261021614074707px;
+    animation: loading 1s ease-out infinite;
+    animation-delay: 0.5s;
+}
+
+.loading-7 {
+    transform-origin: 31.09000015258789px 18px;
+    animation: loading 1s ease-out infinite;
+    animation-delay: 0.6s;
+}
+
+.loading-8 {
+    transform-origin: 27.261021614074707px 8.7422194480896px;
+    animation: loading 1s ease-out infinite;
+    animation-delay: 0.8s;
+}
+
+.cls-202 {
+    opacity: 1;
+    animation: letter 5s step-end infinite;
+}
+
+.cls-202:nth-child(2) {
+    opacity: 1;
+    animation: letter 5s step-end infinite;
+    animation-delay: .2s;
+}
+
+.cls-202:nth-child(3) {
+    opacity: 1;
+    animation: letter 5s step-end infinite;
+    animation-delay: .4s;
+}
+
+.cls-202:nth-child(4) {
+    opacity: 1;
+    animation: letter 5s step-end infinite;
+    animation-delay: .6s;
+}
+
+.cls-202:nth-child(5) {
+    opacity: 1;
+    animation: letter 5s step-end infinite;
+    animation-delay: .8s;
+}
+
+.cls-202:nth-child(6) {
+    opacity: 1;
+    animation: letter 5s step-end infinite;
+    animation-delay: 1s;
+}
+
+.cls-202:nth-child(7) {
+    opacity: 1;
+    animation: letter 5s step-end infinite;
+    animation-delay: 1.2s;
+}
+
+.cls-202:nth-child(8) {
+    opacity: 1;
+    animation: letter 5s step-end infinite;
+    animation-delay: 1.4s;
+}
+
+.cls-202:nth-child(9) {
+    opacity: 1;
+    animation: letter 5s step-end infinite;
+    animation-delay: 1.6s;
+}
+
+.cls-202:nth-child(10) {
+    opacity: 1;
+    animation: letter 5s step-end infinite;
+    animation-delay: 1.8s;
+}
+
+.poly {
+    animation: progress 1s step-start infinite;
+    animation-delay: .5s;
+}
+
+.bar {
+    animation: progress 1s step-start infinite;
+}
+
+.shine-1 {
+    opacity: 0;
+    stroke: antiquewhite;
+    stroke-width: .2;
+    transform-origin: 138.96500396728516px 78.375px;
+    animation: sparkle 10s 6s ease infinite;
+}
+
+.shine-2 {
+    opacity: 0;
+    transform-origin: 213.61915588378906px 46.24999809265137px;
+    animation: sparkle 12s 12s ease-in-out infinite;
+}
+
+#grafitti {
+    stroke: #bd0000;
+    stroke-dasharray: 70.6;
+    stroke-dashoffset: 70.6;
+    animation: offset 1s linear forwards, title 1s 15s ease-in forwards;
+    animation-delay: 3s;
+}
+
+#grafitti:nth-child(2) {
+    stroke-dasharray: 90.8;
+    stroke-dashoffset: 90.8;
+    animation-delay: 3.3s;
+}
+
+#grafitti:nth-child(3) {
+    stroke-dasharray: 66.3;
+    stroke-dashoffset: 66.3;
+    animation-delay: 3.6s;
+}
+
+#grafitti:nth-child(4) {
+    stroke-dasharray: 66.3;
+    stroke-dashoffset: 66.3;
+    animation-delay: 3.9s;
+}
+
+#grafitti:nth-child(5) {
+    stroke-dasharray: 93.6;
+    stroke-dashoffset: 93.6;
+    animation-delay: 4.2s;
+}
+
+#grafitti:nth-child(6) {
+    stroke-dasharray: 72.2;
+    stroke-dashoffset: 72.2;
+    animation-delay: 3.9s;
+}
+
+#grafitti:nth-child(7) {
+    stroke-dasharray: 98.4;
+    stroke-dashoffset: 98.4;
+    animation-delay: 3.6s;
+}
+
+#grafitti:nth-child(8) {
+    stroke-dasharray: 88.9;
+    stroke-dashoffset: 88.9;
+    animation-delay: 3.3s;
+}
+
+#grafitti:nth-child(9) {
+    stroke-dasharray: 88.6;
+    stroke-dashoffset: 88.6;
+    animation-delay: 3s;
+}
+
+#grafitti:nth-child(10) {
+    stroke-dasharray: 100.3;
+    stroke-dashoffset: 100.3;
+    animation-delay: 3.3s;
+}
+
+#grafitti:nth-child(11) {
+    stroke-dasharray: 90.3;
+    stroke-dashoffset: 90.3;
+    animation-delay: 3s;
+}
+
+#grafitti:nth-child(12) {
+    stroke-dasharray: 98.3;
+    stroke-dashoffset: 98.3;
+    animation-delay: 3.6s;
+}
+
+#grafitti:nth-child(13) {
+    stroke-dasharray: 93.9;
+    stroke-dashoffset: 93.9;
+    animation-delay: 3.9s;
+}
+
+#grafitti:nth-child(14) {
+    stroke-dasharray: 90.3;
+    stroke-dashoffset: 90.3;
+    animation-delay: 3s;
+}
+
+#grafitti:nth-child(15) {
+    stroke-dasharray: 78.1;
+    stroke-dashoffset: 78.1;
+    animation-delay: 3.6s;
+}
+
+#grafitti:nth-child(16) {
+    stroke-dasharray: 90.3;
+    stroke-dashoffset: 90.3;
+    animation-delay: 3.9s;
+}
+
+#grafitti:nth-child(17) {
+    stroke-dasharray: 66.3;
+    stroke-dashoffset: 66.3;
+    animation-delay: 3.3s;
+}
+
+#grafitti:nth-child(18) {
+    stroke-dasharray: 92.9;
+    stroke-dashoffset: 92.9;
+    animation-delay: 3.6s;
+}
+
+#grafitti:nth-child(19) {
+    stroke-dasharray: 79.1;
+    stroke-dashoffset: 79.1;
+    animation-delay: 3.3s;
+}
+
+#grafitti:nth-child(20) {
+    stroke-dasharray: 90.3;
+    stroke-dashoffset: 90.3;
+    animation-delay: 4.2s;
+}
+
+#grafitti:nth-child(21) {
+    stroke-dasharray: 95.3;
+    stroke-dashoffset: 95.3;
+    animation-delay: 3s;
+}
+
+#crown {
+    stroke: #fffb00;
+    stroke-dasharray: 93.4;
+    stroke-dashoffset: 93.4;
+    animation: offset 1s linear forwards;
+    animation-delay: 4.8s;
+}
+
+
+
+
+
+/* ============== ABOUT ================ */
+
+
+#_Button_:hover {
+    cursor: pointer;
+    animation: 0s;
+    transform: scale(1.1)
+}
+#_Button_:active{
+    transform: translateY(4px);
+}
+
+#_Mouse_:hover{
+    cursor: pointer;
+    transform-origin: 678.1599731445312px 412.4388122558594px;
+    transform: scale(1.01);
+}
+
+
+#_Head_ {
+    transform-origin: 837.1016235351562px 414.85601806640625px;
+    animation: sleepyhead 2s ease-in-out infinite;
+}
+
+#wakey{
+    opacity: 0;
+    transform: translate(62px, 45px);
+}
+
+#hearteyes,
+#mean {
+    transform: translate(62px, 45px);
+}
+
+#act, #mara, #father {
+    position: relative;
+    overflow: hidden;
+}
+
+#act .card-img,
+#mara .card-img,
+#father .card-img {
+    border-radius: 50%;
+    transition-duration: .2s;
+    transition-property: border-radius;
+}
+
+#act:hover .card-img,
+#mara:hover .card-img,
+#father:hover .card-img {
+    border-radius: 0%;
+}
+
+#act #actoverlay,
+#father #fatheroverlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+
+    transition-duration: .6s;
+    transition-property: transform, opacity;
+}
+
+#mara #maraoverlay {
+    left: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: transform, opacity;
+}
+
+#act:hover #actoverlay,
+#father:hover #fatheroverlay {
+    opacity: 1;
+    transform: translateX(95%);
+}
+
+#mara:hover #maraoverlay {
+    opacity: 1;
+    transform: translateX(-95%);
+}
+
+#hateBtn{
+    background:#e56b45;
+}
+
+#loveBtn {
+    background:#62CD92;
+}
+
+#loveBtn:hover,
+#hateBtn:hover,
+.modal-footer button:hover {
+    transform: scale(1.1);
+}
+
+
+.spark-1 {
+    opacity: 1;
+    stroke: #ff7b00;
+    stroke-width: 2px;
+    transform: translate(30px, -23px);
+    animation: sparks .5s .2s linear infinite;
+}
+.spark-2 {
+    stroke: #ff7b00;
+    stroke-width: 2px;
+    transform: translate(10px, -25px);
+    animation: sparks .5s .4s linear infinite;
+}
+.spark-3 {
+    stroke: #ff7b00;
+    stroke-width: 2px;
+    opacity: 1;
+    transform: translate(-20px, -3px);
+    animation: sparks .5s linear infinite;
+}
+
+#_Button_ {
+    transform-origin: 385.30003356933594px 199.13277435302734px;
+    animation: throb 2.2s ease-out infinite;
+}
+
+.clas-11 {
+    transform-origin: 209.7208709716797px 56.32279968261719px;
+    animation: throb 1s ease-in-out infinite alternate-reverse;
+}
+#clas-13 {
+    transform-origin: 498.5036926269531px 47.53721618652344px;
+    animation: throb 1s .3s ease-in-out infinite alternate-reverse;
+}
+.clas-12,
+.clas-14 {
+    transform-origin: 783.2977294921875px 390.2027282714844px;
+    animation: throb 1.5s .3s ease-in-out infinite alternate;
+}
+
+.clas-15 {
+    stroke: #2bff00;
+    stroke-width: 8px;
+}
+
+
+
+/* =======================     WORK     ============================= */
+#SkillsBtn:hover {
+    cursor: pointer;
+    transform-origin: 273.80999755859375px 120.01499938964844px;
+    transform: scale(1.1);
+}
+#ProjBtn:hover {
+    cursor: pointer;
+    transform-origin: 374.5000305175781px 120.01499938964844px;    
+    transform: scale(1.1);
+}
+
+#ProjBtn:active,
+#SkillsBtn:active {
+    transform: translateY(4px);
+}
+
+#projBtnA{
+    margin-top: 11em;
+}
+
+#projBtnB {
+    margin-top: 3.7em;
+}
+
+#projBtnC {
+    margin-top: .5em;
+}
+
+#Rat{
+    transform: translate(-12px);
+}
+
+#Tail{
+    transform-origin: 588.760009765625px 352.3300476074219px;
+    animation: tail 2s ease-in-out alternate-reverse infinite;
+}
+
+@media (max-width:768px) {
+    #introBtn{
+        font-size: 15px;
+    }
+    #lifestory{
+        margin-top: -200px;
+        font-size: 16px;
+    }
+    #actoverlay,
+    #maraoverlay,
+    #fatheroverlay {
+        font-size: 12px;
+    }
+
+    .row .col-md-4 {
+       padding: 5px;
+    }
+
+    #SkillsModal .img-fluid {
+        margin: 10%;
+        height: 75%;
+    }
+
+    #proCard {
+        width: 155px;
+        font-size: 10px;
+    }
+    #proCard .card-body {
+        padding: 10px;
+    }
+
+    #projBtnA {
+        margin-top: 115px;
+    }
+    #projBtnB {
+        margin-top: 10px;
+    }
+    #projBtnC {
+        margin-top: 25px;
+    }
+    #Footer h1{
+        font-size: 30px;
+    }
+    #Footer{
+        height: 250px;
+    }
+}
+
+@media (max-width:600px) {
+    #introBtn {
+        font-size: 10px;
+    }
+    #lifestory {
+        margin-top: -150px;
+        font-size: 11px;
+    }
+    #lifexit {
+        font-size: 12px;
+        text-align: 50%;
+    }
+    #actoverlay,
+    #maraoverlay,
+    #fatheroverlay {
+        color: whitesmoke;
+        text-shadow:3px 3px rgb(0, 0, 0);
+        font-size:18px;
+        text-align: center;
+        padding: 25px;
+    }
+    #act #actoverlay,
+    #father #fatheroverlay {
+        right: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition-duration: .6s;
+        transition-property: transform, opacity;
+    }
+
+    #mara #maraoverlay {
+        left: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition-duration: .6s;
+        transition-property: transform, opacity;
+        
+    }
+
+    #maraoverlay .title{
+        text-align: center;
+    }
+
+    #act:hover #actoverlay,
+    #father:hover #fatheroverlay {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+
+    #mara:hover #maraoverlay {
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+
+    #proCard .card-title{
+        font-size: 30px;
+    }
+    #proCard {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #proCard img{
+        width: 360px;
+    }
+    .row .col-md-4{
+        margin: 10px;
+    }
+    #projBtnA {
+        bottom: 0%;
+    }
+
+    #projBtnB {
+        bottom: 0%;
+    }
+
+    #projBtnC {
+        bottom: 0%;
+    }
+    #Footer{
+        height: 180px;
+    }
+    #Footer h1{
+        font-size: 15px;
+    }
+    #Footer i {
+        font-size: 45px;
+    }
+}
